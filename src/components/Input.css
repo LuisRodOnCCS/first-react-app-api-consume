@@ -1,0 +1,12 @@
+input {
+  padding: .5rem 2%;
+  border-radius: 7px 0 0 7px;
+  background-color: #f8f8f8;
+  border: solid thin #8d8e8c;
+  color: rgb(95, 95, 95);
+  width: 66%;
+}
+
+input:focus {
+  outline: none;
+}

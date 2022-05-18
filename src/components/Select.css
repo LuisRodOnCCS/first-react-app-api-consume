@@ -1,0 +1,13 @@
+select {
+  padding: .5rem .75rem;
+  border-radius: 7px;
+  background-color: #f8f8f8;
+  border: solid thin #8d8e8c;
+  color: rgb(95, 95, 95);
+  width: 100%;
+}
+
+button:active {
+  background-color: #579527;
+  border: solid thin #39611a;
+}

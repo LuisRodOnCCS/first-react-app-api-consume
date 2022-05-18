@@ -1,0 +1,13 @@
+button {
+  padding: .5rem 2%;
+  border-radius: 0 7px 7px 0;
+  background-color: #75b643;
+  border: solid thin #52812f;
+  color: white;
+  width: 26%;
+}
+
+button:active {
+  background-color: #579527;
+  border: solid thin #39611a;
+}
