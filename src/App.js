@@ -29,6 +29,7 @@ function App() {
     <div className='App'>
       <div className="container">
         <div>
+          <p>Busca uno de los siguientes códigos postales: 20000, 20016 o 20018</p>
           <Input type="text" />
           <Button value="Buscar" onClick={() => fetchCP()}  />
         </div>
