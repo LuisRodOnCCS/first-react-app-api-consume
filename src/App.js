@@ -12,15 +12,18 @@ function App() {
   
   const initialURL = 'http://otb.mx/api/cpostal';
 
-  const fetchCP = () => {
+  const fetchCP = async () => {
     let value = document.querySelector('input').value;
 
-    fetch(`${initialURL}/${value}`)
+    await fetch(`${initialURL}/${value}`)
       .then(response => response.json())
       .then(data => {
-        setCP(data[0]);
-        setCity(data[0].city);
-        setSettlements(data[0].settlements);
+        setCP(data.data.postal_code);
+        setCity(data.data.city);
+        setSettlements(data.data.settlements);
+        console.log(CP);
+        console.log(City);
+        console.log(Settlements);
       })
       .catch(error => console.log(error))
   };
